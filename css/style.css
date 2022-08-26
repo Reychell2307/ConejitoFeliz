@@ -1,0 +1,363 @@
+a, h1, h2,p{
+    text-decoration: none;
+    color: #363636;
+}
+p{
+    font-size: 18px;
+}
+
+
+header{
+    display: flex;
+    width: 100%;
+    top: 0;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+nav div{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+.menu-opciones{
+    list-style: none;
+    display: flex;
+    justify-content:end;
+}
+.menu-opciones li {
+    display: inline;
+    padding-right: 1rem;
+}
+/* GRID*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    display: flow-root;
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    margin-bottom: 1;
+  }
+  .logo{
+    float: left;
+    color: #363636;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 0;
+  }
+  /* Style the topnav links */
+  .topnav  ul {
+    display: flex;
+    justify-content: end;
+  }
+  .topnav  ul li{
+    float: left;
+    color: #363636;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0;
+    padding-top: 0
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+   color: #061faa;
+   box-shadow: 2px 2px 5px #000;
+   border-radius: 3rem;;
+
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .col-md {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  .col{
+    float: left;
+    width: 100%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .col-md {
+      width: 100%;
+    }
+    .topnav  ul {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+/*Cierre GRID*/
+/*HERO*/
+.logo{
+    color: #0d99c4;
+    padding: 1px;;
+  transition: background 2s linear;
+  border-radius: 3rem;
+  margin-top: 8px;
+  background-color: #ffffbb;
+}
+.logo-2{
+    color: #990000;
+}
+.btn-hero{
+border-color: #000;
+font-size: 16px;
+width: 140px;
+padding: 5px 5px 5px 5px ;
+background-color: #363636;
+border-radius: 1rem;
+color: #ffff;
+}
+.btn-hero:hover{
+    background-color:#ffff;
+    color: #363636;
+}
+.text-logo{
+    background-color: #FFF500;
+    color: #333;
+    font-weight: 900;
+    display: inline-flex;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 190px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 190px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 190px;
+    }
+    95% {
+      top: -9rem;
+      width: 190px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+  .floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    border-radius: 100%;
+    border-top: none;
+-moz-box-shadow: -2px 1px 5px 13px rgba(0,0,0,0.07);
+box-shadow: -1px 25px 17px 7px rgb(0 0 0 / 38%);
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+.titulo{
+    color: #363636;
+    font-size: 36px;
+    margin-bottom: 0;
+    
+}
+.img-hero{
+    display: flex;
+    justify-content: center;
+}
+/*CIERRA HERO*/
+/*CONTACTO*/
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    top: 25px;
+    width: 300px;
+    height: 300px;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 1rem;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    color: #ffff;
+    background-color: #990000;
+    border-radius: 1rem 1rem 0 0;
+}
+.card-body{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+}
+.card-input{
+    display: block;
+    border-radius: 1rem;
+    border-color: #000;
+    padding: 5px;
+}
+textarea {
+    height: 30px;
+    width: 100%;
+    resize: none;
+    border-radius: 1rem;
+    border-color: #000;
+    padding: 5px;
+    border: solid 2px;
+}
+.btn-contacto{
+    border-color: #990000;
+    font-size: 16px;
+    width: 140px;
+    padding: 5px 5px 5px 5px ;
+    background-color:#990000;
+    border-radius: 1rem;
+    color: #ffff;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    }
+    .btn-contacto:hover{
+        background-color:#ffff;
+        color: #363636;
+    }
+/*CIERRE CONTACTO*/
+/*NOSOTROS*/
+@media screen and (max-width:600px) {
+  .img-nosotros{
+    width: 250px;
+    height: 250px;
+  }
+  }
+  .listas-contacto{
+    color: #000
+  }
+  .titulo-listas{
+    color: #990000;
+  }
+/*CIERRE NOSOTROS*/
+/*GALERIA*/
+.titulo-galeria{
+  text-align: center;
+  width: 100%;
+  color: #990000;
+  padding: 5px 5px 5px 5px ;
+  font-size: 35px;
+  text-shadow: 3px 3px 2px #990000;
+  color: #000
+
+}
+.img-galeria{
+  padding-left: 80px;
+}
+/*CIERRE GALERIA*/
+/*UBICACION*/
+.titulo-ubicacion{
+  text-align: center;
+  width: 100%;
+  color: #990000;
+  padding: 5px 5px 5px 5px ;
+  font-size: 35px;
+  text-shadow: 3px 3px 2px #FFF500;
+  color: #000
+}
+/* CIERREUBICACION*/
+/*FOOTER*/
+footer{
+    position: fixed;
+    margin-top: 155px;
+    bottom: 0;
+    width: 100% ;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #FFF500;
+    background-color: #ffff;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+
+}
+/*CIERRE FOOTER*/
