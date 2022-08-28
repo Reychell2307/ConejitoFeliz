@@ -63,8 +63,9 @@ nav div{
   .topnav  ul {
     display: flex;
     justify-content: end;
+    padding-top: 25px;
   }
-  .topnav  ul li{
+  .topnav ul li{
     float: left;
     color: #363636;
     text-align: center;
@@ -77,6 +78,24 @@ nav div{
   
   /* Change color on hover */
   .topnav a:hover {
+   color: #061faa;
+   box-shadow: 2px 2px 5px #000;
+   border-radius: 3rem;;
+
+  }
+  .menu-link{
+    float: left;
+    color: #363636;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0;
+    padding-top: 0
+  }
+  
+  /* Change color on hover */
+  .nav-link:hover {
    color: #061faa;
    box-shadow: 2px 2px 5px #000;
    border-radius: 3rem;;
@@ -100,14 +119,19 @@ nav div{
     clear: both;
   }
   
+  .navbar-collapse{
+    justify-content: end;
+  }
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width:600px) {
     .col-md {
       width: 100%;
     }
-    .topnav  ul {
-      display: flex;
-      justify-content: center;
+    .navbar-collapse{
+      justify-content: start;
+    }
+    .logo{
+      width: 60%;
     }
   }
 
@@ -120,6 +144,7 @@ nav div{
   border-radius: 3rem;
   margin-top: 8px;
   background-color: #ffffbb;
+  width: 25%;
 }
 .logo-2{
     color: #990000;
