@@ -275,8 +275,9 @@ box-shadow: -1px 25px 17px 7px rgb(0 0 0 / 38%);
 .card{
     position: relative;
     top: 25px;
-    width: 300px;
-    height: 300px;
+    width: 300px !important;
+    height: 335px !important;
+    border-radius: 1rem !important;
     -moz-box-shadow: 3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow: 3px 3px 5px 6px #ccc;
@@ -372,7 +373,7 @@ textarea {
 /*FOOTER*/
 footer{
     position: fixed;
-    margin-top: 155px;
+    margin-top: 200px;
     bottom: 0;
     width: 100% ;
     -moz-box-shadow: 3px 3px 5px 6px #ccc;
