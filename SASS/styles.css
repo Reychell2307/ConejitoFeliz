@@ -151,7 +151,7 @@ body {
   transition: background 2s linear;
   border-radius: 3rem;
   margin-top: 8px;
-  background-color: #ffffbb;
+  background-color: #fff;
   width: 25%;
 }
 
@@ -163,10 +163,11 @@ body {
   border-color: #000;
   font-size: 16px;
   width: 140px;
+  height: 45px;
   padding: 5px 5px 5px 5px;
   background-color: #363636;
   border-radius: 1rem;
-  color: white;
+  color: #fff;
 }
 .btn-hero:hover {
   color: #061faa;
@@ -385,7 +386,7 @@ body {
   justify-content: center;
   position: relative;
   font-size: 20px;
-  color: white;
+  color: #fff;
   background-color: #990000;
   border-radius: 1rem 1rem 0 0;
 }
@@ -418,16 +419,17 @@ textarea {
   border-color: #990000;
   font-size: 16px;
   width: 140px;
+  height: 45px;
   padding: 5px 5px 5px 5px;
   background-color: #990000;
   border-radius: 1rem;
-  color: white;
+  color: #fff;
   margin-top: 20px;
   margin-left: 20px;
 }
 .btn-contacto:hover {
   color: #363636;
-  background-color: white;
+  background-color: #fff;
 }
 
 /*CIERRE CONTACTO*/
@@ -482,7 +484,7 @@ footer {
   bottom: 0;
   width: 100%;
   box-shadow: 3px 3px 5px 6px #FFF500;
-  background-color: white;
+  background-color: #fff;
 }
 
 footer div {

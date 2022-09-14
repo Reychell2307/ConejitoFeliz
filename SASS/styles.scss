@@ -1,7 +1,8 @@
 @import "colores";
+@import "mixin";
 a, h1, h2,p{
     text-decoration: none;
-    color: $letrasColor;
+    color: map-get($map: $mapcolors, $key: 'letrasColor');
 }
 p{
     font-size: 18px;
@@ -54,7 +55,7 @@ nav div{
   }
   .logo{
     float: left;
-    color: $letrasColor;
+    color: map-get($map: $mapcolors, $key: 'letrasColor');
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -68,7 +69,7 @@ nav div{
   }
   .topnav ul li{
     float: left;
-    color: $letrasColor;
+    color: map-get($map: $mapcolors, $key: 'letrasColor');
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -79,14 +80,14 @@ nav div{
   
   /* Change color on hover */
   .topnav a:hover {
-   color: $bluecolor;
+   color: map-get($map: $mapcolors, $key: 'bluecolor');
    box-shadow: 2px 2px 5px #000;
    border-radius: 3rem;;
 
   }
   .menu-link{
     float: left;
-    color: $letrasColor;
+    color: map-get($map: $mapcolors, $key: 'letrasColor');
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -97,7 +98,7 @@ nav div{
   
   /* Change color on hover */
   .nav-link:hover {
-   color: $bluecolor;
+   color: map-get($map: $mapcolors, $key: 'bluecolor');
    box-shadow: 2px 2px 5px #000;
    border-radius: 3rem;;
 
@@ -144,28 +145,29 @@ nav div{
   transition: background 2s linear;
   border-radius: 3rem;
   margin-top: 8px;
-  background-color: $whitebb;
+  background-color: map-get($map: $mapcolors, $key: 'whitecolor');
   width: 25%;
 }
 .logo-2{
-    color: $redcolor;
+    color: map-get($map: $mapcolors, $key: 'redcolor');
 }
 .btn-hero{
 border-color: #000;
 font-size: 16px;
-width: 140px;
+@include btn-tamaño;
 padding: 5px 5px 5px 5px ;
-background-color: $letrasColor;
+background-color: map-get($map: $mapcolors, $key: 'letrasColor');
 border-radius: 1rem;
-color: $white;
+color: map-get($map: $mapcolors, $key: 'whitecolor');
 &:hover{
-  color: $bluecolor;
+  color: map-get($map: $mapcolors, $key: 'bluecolor')
+  ;
   background-color: #000;
 }
 }
 
 .text-logo{
-    background-color: $yellowcolor;
+    background-color: map-get($map: $mapcolors, $key: 'yellowcolor');
     color: #333;
     font-weight: 900;
     display: inline-flex;
@@ -259,7 +261,7 @@ box-shadow: -1px 25px 17px 7px rgb(0 0 0 / 38%);
     100%   { transform: translate(0, -0px); }   
 }
 .titulo{
-    color: $letrasColor;
+    color: map-get($map: $mapcolors, $key: 'letrasColor');
     font-size: 36px;
     margin-bottom: 0;
     
@@ -290,8 +292,8 @@ box-shadow: -1px 25px 17px 7px rgb(0 0 0 / 38%);
     justify-content: center;
     position: relative;
     font-size: 20px;
-    color: $white;
-    background-color: $redcolor;
+    color: map-get($map: $mapcolors, $key: 'whitecolor');
+    background-color: map-get($map: $mapcolors, $key: 'redcolor');
     border-radius: 1rem 1rem 0 0;
 }
 .card-body{
@@ -316,18 +318,18 @@ textarea {
     border: solid 2px;
 }
 .btn-contacto{
-    border-color: $redcolor;
+    border-color: map-get($map: $mapcolors, $key: 'redcolor');
     font-size: 16px;
-    width: 140px;
+    @include btn-tamaño;
     padding: 5px 5px 5px 5px ;
-    background-color:$redcolor;
+    background-color:map-get($map: $mapcolors, $key: 'redcolor');
     border-radius: 1rem;
-    color: $white;
+    color: map-get($map: $mapcolors, $key: 'whitecolor');
     margin-top: 20px;
     margin-left: 20px;
     &:hover{
-      color:$letrasColor;
-      background-color:$white;
+      color:map-get($map: $mapcolors, $key: 'letrasColor');
+      background-color:map-get($map: $mapcolors, $key: 'whitecolor');
     }
     }
 /*CIERRE CONTACTO*/
@@ -342,17 +344,17 @@ textarea {
     color: #000
   }
   .titulo-listas{
-    color: $redcolor;
+    color: map-get($map: $mapcolors, $key: 'redcolor');
   }
 /*CIERRE NOSOTROS*/
 /*GALERIA*/
 .titulo-galeria{
   text-align: center;
   width: 100%;
-  color: $redcolor;
+  color: map-get($map: $mapcolors, $key: 'redcolor');
   padding: 5px 5px 5px 5px ;
   font-size: 35px;
-  text-shadow: 3px 3px 2px $redcolor;
+  text-shadow: 3px 3px 2px map-get($map: $mapcolors, $key: 'redcolor');
   color: #000
 
 }
@@ -364,10 +366,10 @@ textarea {
 .titulo-ubicacion{
   text-align: center;
   width: 100%;
-  color: $redcolor;
+  color: map-get($map: $mapcolors, $key: 'redcolor');
   padding: 5px 5px 5px 5px ;
   font-size: 35px;
-  text-shadow: 3px 3px 2px $yellowcolor;
+  text-shadow: 3px 3px 2px map-get($map: $mapcolors, $key: 'yellowcolor');
   color: #000
 }
 /* CIERREUBICACION*/
@@ -379,12 +381,15 @@ footer{
     width: 100% ;
     -moz-box-shadow: 3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px $yellowcolor;
-    background-color: $white;
+    box-shadow: 3px 3px 5px 6px map-get($map: $mapcolors, $key: 'yellowcolor');
+    background-color: map-get($map: $mapcolors, $key: 'whitecolor');
+}
+%centrado{
+  display: flex;
+  justify-content: center;
 }
 footer div{
-    display: flex;
-    justify-content: center;
+    @extend %centrado;
 
 }
 /*CIERRE FOOTER*/
