@@ -19,19 +19,23 @@ header{
     width: 100%;
     justify-content: center;
 }
-nav div{
+nav{
+  div{
     display: flex;
     width: 100%;
     justify-content: start;
+  }
 }
 .menu-opciones{
     list-style: none;
     display: flex;
     justify-content:end;
 }
-.menu-opciones li {
+.menu-opciones  {
+  li{
     display: inline;
     padding-right: 1rem;
+  }
 }
 /* GRID*/
 * {
@@ -62,12 +66,16 @@ nav div{
     margin-top: 0;
   }
   /* Style the topnav links */
-  .topnav  ul {
+  .topnav{
+    ul{
     display: flex;
     justify-content: end;
     padding-top: 25px;
+    }
   }
   .topnav ul li{
+    ul{
+      li{
     float: left;
     color: map-get($map: $mapcolors, $key: 'letrasColor');
     text-align: center;
@@ -76,14 +84,17 @@ nav div{
     list-style: none;
     margin-top: 0;
     padding-top: 0
+      }
+    }
   }
   
   /* Change color on hover */
-  .topnav a:hover {
+  .topnav {
+    &:hover{
    color: map-get($map: $mapcolors, $key: 'bluecolor');
    box-shadow: 2px 2px 5px #000;
    border-radius: 3rem;;
-
+    }
   }
   .menu-link{
     float: left;
@@ -97,11 +108,13 @@ nav div{
   }
   
   /* Change color on hover */
-  .nav-link:hover {
+  .nav-link {
+    &:hover{
    color: map-get($map: $mapcolors, $key: 'bluecolor');
    box-shadow: 2px 2px 5px #000;
    border-radius: 3rem;;
 
+    }
   }
   
   /* Create three equal columns that floats next to each other */
